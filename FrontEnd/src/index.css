@@ -1,0 +1,42 @@
+/* index.css */
+
+:root {
+  --primary-color: #1976d2;
+  --secondary-color: #43a047;
+  --danger-color: #e53935;
+  --font-family: 'Segoe UI', sans-serif;
+  --bg-color: #f4f6f8;
+  --text-color: #333;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Estilo para anclar tablas/responsividad global */
+table {
+  width: 100%;
+}
+
+/* Elimina decoración de enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Botones base sin estilo (útil para componentes personalizados) */
+button {
+  font-family: inherit;
+}
