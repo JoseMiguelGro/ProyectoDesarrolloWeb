@@ -71,6 +71,12 @@ Componente de formulario reutilizable para **agregar o editar usuarios**.
 
 [Ver FormularioUsuarios.jsx](FrontEnd/src/componentes/FormularioUsuarios.jsx)
 
+-Aqui es como empieza antes de Agregar al Usuario
+![Ver antes de agregar Usuario](https://github.com/JoseMiguelGro/ProyectoDesarrolloWeb/blob/main/IMG/Registros1.png)
+
+-Asi es como se Agrego el Usuario y se muestra en la Interfazhttps://github.com/JoseMiguelGro/ProyectoDesarrolloWeb/blob/main/IMG/Registros1.png
+![Ver cuando se Usuario de Agrego Exitosamente](https://github.com/JoseMiguelGro/ProyectoDesarrolloWeb/blob/main/IMG/AgredagoUsuario.png)
+
 ---
 
 ### 3. `ListaUsuario.jsx`
@@ -81,6 +87,15 @@ Componente que muestra la **tabla de usuarios**.
 - Muestra los datos y botones de acción para cada usuario.
 
 [Ver ListaUsuario.jsx](FrontEnd/src/componentes/ListaUsuario.jsx)
+
+-Aqui muestra cuando quieres Actualizar uno o mas campos a un Usuario 
+![Ver cuando se Actualiza el Usuario](https://github.com/JoseMiguelGro/ProyectoDesarrolloWeb/blob/main/IMG/EditarUsuario.png)
+
+-Aqui manda un alerta de que si quieres Eliminar al Usuario
+![Ver cuando manda alerta de Eliminar Usuario](https://github.com/JoseMiguelGro/ProyectoDesarrolloWeb/blob/main/IMG/ConfirmarBorrar.png)
+
+-Aqui muestra cuando el Usuario fue Borrado
+![Ver cuando Elimina al Usuario](https://github.com/JoseMiguelGro/ProyectoDesarrolloWeb/blob/main/IMG/UsuarioBorrado.png)
 
 ---
 
@@ -102,7 +117,7 @@ cd ProyectoFinalWeb
 ```
 
 ### 2. Backend
-
+Desde la Terminal se hace lo siguiente:
 ```bash
 cd BackEnd
 npm install
@@ -111,9 +126,9 @@ node app.js
 El backend estará disponible en `http://localhost:3000`.
 
 ### 3. Frontend
-
+Habriendo otra Terminal se hace lo siguiente:
 ```bash
-cd ../FrontEnd
+cd FrontEnd
 npm install
 npm run dev
 ```
