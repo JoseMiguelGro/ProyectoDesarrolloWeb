@@ -74,7 +74,7 @@ Componente de formulario reutilizable para **agregar o editar usuarios**.
 -Aqui es como empieza antes de Agregar al Usuario
 ![Ver antes de agregar Usuario](https://github.com/JoseMiguelGro/ProyectoDesarrolloWeb/blob/main/IMG/Registros1.png)
 
--Asi es como se Agrego el Usuario y se muestra en la Interfazhttps://github.com/JoseMiguelGro/ProyectoDesarrolloWeb/blob/main/IMG/Registros1.png
+-Asi es como se Agrego el Usuario y se muestra en la Interfaz
 ![Ver cuando se Usuario de Agrego Exitosamente](https://github.com/JoseMiguelGro/ProyectoDesarrolloWeb/blob/main/IMG/AgredagoUsuario.png)
 
 ---
