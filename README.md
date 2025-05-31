@@ -157,5 +157,3 @@ El frontend estará disponible en `http://localhost:5173`.
 - Autor: Guerrero Romero José Miguel
 
 ---
-
-¡No dudes en modificar este README para adaptarlo a tus necesidades!
