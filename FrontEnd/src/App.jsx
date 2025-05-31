@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import FormularioUsuario from './componentes/FormularioUsuarios';
+import ListaUsuarios from './componentes/ListaUsuario';
 
 function App() {
   const [usuarios, setUsuarios] = useState([]);
@@ -89,81 +91,27 @@ function App() {
     }
   };
 
+  const handleCancel = () => {
+    setEditId(null);
+    setForm({ nombre: '', correo: '', telefono: '', direccion: '' });
+  };
+
   return (
     <div>
       <h1>Gestión de Usuarios</h1>
-      <form onSubmit={editId ? handleUpdate : handleSubmit}>
-        <input
-          name="nombre"
-          placeholder="Nombre completo"
-          value={form.nombre}
-          onChange={handleChange}
-          required
-        />
-        <input
-          name="correo"
-          placeholder="Correo electrónico"
-          value={form.correo}
-          onChange={handleChange}
-          required
-        />
-        <input
-          name="telefono"
-          placeholder="Teléfono"
-          value={form.telefono}
-          onChange={handleChange}
-          required
-        />
-        <input
-          name="direccion"
-          placeholder="Dirección"
-          value={form.direccion}
-          onChange={handleChange}
-          required
-        />
-        <button type="submit">{editId ? 'Guardar cambios' : 'Agregar usuario'}</button>
-        {editId && (
-          <button
-            type="button"
-            onClick={() => {
-              setEditId(null);
-              setForm({ nombre: '', correo: '', telefono: '', direccion: '' });
-            }}
-          >
-            Cancelar edición
-          </button>
-        )}
-      </form>
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Nombre completo</th>
-            <th>Correo electrónico</th>
-            <th>Teléfono</th>
-            <th>Dirección</th>
-            <th>Acciones</th>
-          </tr>
-        </thead>
-        <tbody>
-          {usuarios.map(u => (
-            <tr key={u.id}>
-              <td>{u.id}</td>
-              <td>{u.nombre}</td>
-              <td>{u.correo}</td>
-              <td>{u.telefono}</td>
-              <td>{u.direccion}</td>
-              <td>
-                <center>
-                  <button onClick={() => handleEdit(u)}>Editar</button>
-                  <button onClick={() => handleDelete(u.id)}>Borrar</button>
-                </center>
-                
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <FormularioUsuario
+        form={form}
+        editId={editId}
+        handleChange={handleChange}
+        handleSubmit={handleSubmit}
+        handleUpdate={handleUpdate}
+        handleCancel={handleCancel}
+      />
+      <ListaUsuarios
+        usuarios={usuarios}
+        handleEdit={handleEdit}
+        handleDelete={handleDelete}
+      />
     </div>
   );
 }
